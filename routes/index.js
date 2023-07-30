@@ -18,6 +18,7 @@ var storage = multer.diskStorage(
 
 var upload = multer({storage})
 
+
 /* GET home page. */
 router.post('/new',upload.single('coverImage'), (req,res) => {
     const data =  req.body
